@@ -12,8 +12,8 @@ function generatePassword() {
   var passwordLength = prompt("How long would you like your password?");
   passwordLength = parseInt(passwordLength);
   if (isNaN(passwordLength)) {
-    alert("That is not a valid password length!")
-    return ''
+    alert("That is not a valid password length!");
+    return '';
   }
 
 
@@ -40,8 +40,8 @@ function generatePassword() {
     characterSet = characterSet.concat(lowerCase);
   }
   if (characterSet.length === 0) {
-    alert("You must chose!")
-    return ''
+    alert("You must chose at least 1 option!");
+    return '';
   }
   var password = '';
 
